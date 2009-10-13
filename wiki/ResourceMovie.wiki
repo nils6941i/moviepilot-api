@@ -1,13 +1,16 @@
 #labels Featured,Phase-Implementation,movie
-== Was wird zurückgeliefert? == 
+= What do you get? = 
 
-Daten fuer einen bestimmten Film.
+Data for a certain movie.
 
-h2. Aufzurufende URL
+= URL to call =
 
-Per GET muss die URL des Permalinks des Films  aufgerufen werden. Am Ende muss ".json" angehaengt werden.
+call the permalink of a movie via GET and append ".json".
 
-h3. Alternative Bezeichner
+==  alternative identifiers ==
+
+You can retrieve moviedata via a alternative identifier.
+
 
 Filme können (soweit vorhanden) auch über einen alternativen Bezeichner angesprochen werden. 
 Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-identifier zusammen.
