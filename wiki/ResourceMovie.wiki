@@ -1,0 +1,52 @@
+#labels Featured,Phase-Implementation,movie
+h2. Was wird zurückgeliefert? 
+
+Daten fuer einen bestimmten Film.
+
+h2. Aufzurufende URL
+
+Per GET muss die URL des Permalinks des Films  aufgerufen werden. Am Ende muss ".json" angehaengt werden.
+
+h3. Alternative Bezeichner
+
+Filme können (soweit vorhanden) auch über einen alternativen Bezeichner angesprochen werden. 
+Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-identifier zusammen.
+
+<pre><code>/movies/"servicename"-id-"external-identifier".json</code></pre>
+
+h2. Mögliche GET-Parameter
+
+|Parameter|Beschreibung|optional?|
+|@api_key@|Der API-Key|nein|
+
+h2. Beispielanfrage: Der Film 
+
+<pre><code>/movies/oben.json</code></pre>
+
+<pre><code>/movies/omdb-id-19347.json</code></pre>
+
+h2. Ausfürbar via: 
+
+<pre><code>curl http://www.moviepilot.de/movies/oben.json?api_key=APIKEY </code></pre> 
+
+h2. Beispielantwort
+
+<pre><code>
+{
+    "display_title": "Oben",
+    "premiere_date": "2009-09-17",
+    "cinema_start_date": "2009-09-17",
+    "short_description": "Der ehemalige Ballon-Verkäufer Carl Fredricksen ist ...",
+    "dvd_start_date": null,
+    "on_tv": false,
+    "long_description": "&lt;p&gt;&lt;em&gt;Oben&lt;/em&gt; ist die insgesamt zehnte computeranimierte Produktion .... ",
+    "restful_url": "http://www.moviepilot.de/movies/oben",
+    "countries_list": "US",
+    "runtime": 96,
+    "genres_list": "Komödie,Computeranimation",
+    "production_year": "2009",
+    "average_community_rating": 76.8248,
+    "average_critics_rating": 83.5714
+}
+
+</code></pre>
