@@ -10,12 +10,15 @@ call the permalink of a movie via GET and append ".json".
 ==  alternative identifiers ==
 
 You can retrieve moviedata via a alternative identifier.
+An 
 
+fooo
 
-Filme können (soweit vorhanden) auch über einen alternativen Bezeichner angesprochen werden. 
 Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-identifier zusammen.
 
-<pre><code>/movies/"servicename"-id-"external-identifier".json</code></pre>
+{{{
+/movies/"servicename"-id-"external-identifier".json
+}}}
 
 h2. Mögliche GET-Parameter
 
