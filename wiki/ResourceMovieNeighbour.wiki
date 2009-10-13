@@ -6,7 +6,7 @@ Movies which are related to the given movies. so called neighbours. This movies 
 
 = URL to call =
 
-Via GET the URL of [ResourceMovie Movie]  plus "/neighbours.json".
+Via GET the URL of [ResourceMovie Movie]  plus _/neighbours.json_ .
 
 == parameters for GET ==
 
@@ -17,9 +17,7 @@ Via GET the URL of [ResourceMovie Movie]  plus "/neighbours.json".
 = examples =
 == request for neighbours of the movie "oben" ==
 
-{{{
-/movies/oben/neighbours.json
-}}}
+_/movies/oben/neighbours.json_
 
 
 == curl request for neighbours of the movie "oben" ==
@@ -101,4 +99,3 @@ curl http://de.api.moviepilot.com/movies/oben/neighbours.json?api_key=APIKEY
   }
   
 }}}
-
