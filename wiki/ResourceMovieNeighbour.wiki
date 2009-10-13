@@ -6,7 +6,7 @@ Movies which are related to the given movies. so called neighbours. This movies 
 
 = URL to call =
 
-Via GET the URL of [ApiResourceMovie Movie]  plus "/neighbours.json".
+Via GET the URL of [ResourceMovie Movie]  plus "/neighbours.json".
 
 == parameters for GET ==
 
