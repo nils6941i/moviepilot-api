@@ -19,7 +19,7 @@ Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-ide
 }}}
 
 
-= parameters for GET =
+== parameters for GET ==
 
 ||*parameter*||*description*||*optional*||
 ||''api_key''||ApiKey||needed||
