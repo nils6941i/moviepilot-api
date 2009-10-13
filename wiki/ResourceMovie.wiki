@@ -10,34 +10,42 @@ call the permalink of a movie via GET and append ".json".
 ==  alternative identifiers ==
 
 You can retrieve moviedata via a alternative identifier.
-An 
-
-fooo
+An alternative identifier is created by service-name (omdb, imdb etc.) and the external-identifier.
 
 Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-identifier zusammen.
 
 {{{
-/movies/"servicename"-id-"external-identifier".json
+/movies/"service-name"-id-"external-identifier".json
 }}}
 
-h2. Mögliche GET-Parameter
 
-|Parameter|Beschreibung|optional?|
-|@api_key@|Der API-Key|nein|
+= parameters for GET =
 
-h2. Beispielanfrage: Der Film 
+||*parameter*||*description*||*optional*||
+||''api_key''||ApiKey||needed||
 
-<pre><code>/movies/oben.json</code></pre>
 
-<pre><code>/movies/omdb-id-19347.json</code></pre>
+= examples =
 
-h2. Ausfürbar via: 
+== request ==
 
-<pre><code>curl http://www.moviepilot.de/movies/oben.json?api_key=APIKEY </code></pre> 
+{{{
+/movies/oben.json
+}}}
 
-h2. Beispielantwort
+{{{
+/movies/omdb-id-19347.json
+}}}
 
-<pre><code>
+== request via curl ===
+
+{{{
+curl http://www.moviepilot.de/movies/oben.json?api_key=APIKEY
+}}}
+
+== response ==
+
+{{{
 {
     "display_title": "Oben",
     "premiere_date": "2009-09-17",
@@ -54,5 +62,4 @@ h2. Beispielantwort
     "average_community_rating": 76.8248,
     "average_critics_rating": 83.5714
 }
-
-</code></pre>
+}}}
