@@ -16,7 +16,7 @@ Via GET _/searches/movies.json?q=SEARCHTERM_
 
 ||parameter||description||optional?||
 ||api_key|||ApiKey||needed||
-||q||searchterm|needed||
+||q||searchterm||needed||
 
 = example request =
 
