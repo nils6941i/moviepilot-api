@@ -15,7 +15,7 @@ Via GET the URL of [ResourceMovie Movie]  plus _/casts.json_ .
 
 = fields in response =
  
-||character || contains the name of the character when 
+||character || can contain name of the character when the function is actor ||
 ||function_restful_url|| contains a uri which shows the job id||
 ||person||person object||
 
