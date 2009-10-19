@@ -2,7 +2,7 @@
 
 = What do you get? = 
 
-You get a List of people (ApiResourcePerson) which are part of the Crew.
+You get a list of people (ApiResourcePerson) which are part of the film crew.
 
 = URL to call =
 
@@ -13,7 +13,7 @@ Via GET the URL of [ResourceMovie Movie]  plus _/casts.json_ .
 ||*parameter*||*description*||*optional*||
 ||''api_key''||ApiKey||needed||
 
-== datafields in response ==
+= fields in response =
  
 ||character || contains the name of the character when 
 ||function_restful_url|| contains a uri which shows the job id||
