@@ -18,4 +18,4 @@ A nice webrowser at http://getfirefox.com
 
 == jsonview ==
 
-For viewing json responses with syntax highlighting view jsonview at http://brh.numbera.com/software/jsonview/ or install it at https://addons.mozilla.org/de/firefox/addon/10869. 
+For viewing json responses with syntax highlighting read more on jsonview at http://brh.numbera.com/software/jsonview/ or install it at https://addons.mozilla.org/de/firefox/addon/10869. 
