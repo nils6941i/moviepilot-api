@@ -13,5 +13,5 @@ To include multiple resources you must seperate them with "," for example:
 http://www.moviepilot.de/movies.json?include=images,broadcasts,genres
 
 ||resource||what can be included||
-||ResourceMovie|| images, broadcasts, genres||
-||ResourceMovieNeighbour||images, broadcasts, genres||
+||ResourceMovie|| images, broadcasts, genres, watchlist, rating, forecast||
+||ResourceMovieNeighbour||images, broadcasts, genres, watchlist, rating, forecast|
