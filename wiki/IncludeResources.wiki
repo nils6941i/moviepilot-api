@@ -10,7 +10,7 @@ The "include" parameter can be added to include datatypes. There must be a relat
 
 To include multiple resources you must seperate them with "," for example:
 
-http://www.moviepilot.de/movies.json?include=images,broadcasts,genres&per_page=1
+http://www.moviepilot.de/movies.json?include=images,broadcasts,genres
 
 ||resource||what can be included||
 ||ResourceMovie|| images, broadcasts, genres||
