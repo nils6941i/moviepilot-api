@@ -1,0 +1,19 @@
+# Introduction #
+
+Some useful tools while developing with the moviepilot-api.
+
+
+# Details #
+
+## curl ##
+
+curl is a command line tool for transferring files with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, TELNET, DICT, LDAP, LDAPS and FILE. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other [useful tricks](http://curl.haxx.se/docs/features.html).
+
+http://curl.haxx.se/
+
+## firefox ##
+A nice webrowser at http://getfirefox.com
+
+## jsonview ##
+
+For viewing json responses with syntax highlighting read more on jsonview at http://brh.numbera.com/software/jsonview/ or install it at https://addons.mozilla.org/de/firefox/addon/10869.

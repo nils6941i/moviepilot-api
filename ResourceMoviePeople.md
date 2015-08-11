@@ -1,0 +1,77 @@
+# What do you get? #
+
+You get a list of people (ApiResourcePerson) which are part of the film crew.
+
+# URL to call #
+
+Via GET the URL of [Movie](ResourceMovie.md)  plus _/casts.json_ .
+
+## parameters for GET ##
+
+|**parameter**|**description**|**optional**|
+|:------------|:--------------|:-----------|
+|''api\_key'' |ApiKey         |needed      |
+
+# fields in response #
+
+|character | can contain name of the character when the function is actor |
+|:---------|:-------------------------------------------------------------|
+|function\_restful\_url| contains a uri which shows the job id                        |
+|person    |person object                                                 |
+
+
+# examples #
+## request cast information of the movie "oben" ##
+
+_/movies/oben/casts.json_
+
+
+## curl request for casts of the movie "oben" ##
+
+```
+curl http://www.moviepilot.de/movies/oben/casts.json?api_key=APIKEY
+```
+
+## example response ##
+
+```
+{
+    {
+        "character": null,
+        "function_restful_url": "http://www.moviepilot.de/jobs/screenplay",
+        "restful_url": "http://www.moviepilot.de/roles/2733858",
+        "person": {
+            "sex": "m",
+            "date_of_death": null,
+            "pseudonyms": null,
+            "last_name": "Peterson",
+            "first_name": "Bob",
+            "homepage": null,
+            "short_description": "Bob Peterson arbeitet seit 1994 bei Pixar ...",
+            "restful_url": "http://www.moviepilot.de/people/bob-peterson",
+            "date_of_birth": "1961-01-01",
+            "long_description": "<p>Bob Peterson wurde im Januar 1961 in Wooster, ..."
+        }
+    },
+    {
+        "character": "Dug, Alpha",
+        "function_restful_url": "http://www.moviepilot.de/jobs/actor",
+        "restful_url": "http://www.moviepilot.de/roles/2733859",
+        "person": {
+            "sex": "m",
+            "date_of_death": null,
+            "pseudonyms": null,
+            "last_name": "Peterson",
+            "first_name": "Bob",
+            "homepage": null,
+            "short_description": "Bob Peterson arbeitet seit 1994 bei Pixar ...",
+            "restful_url": "http://www.moviepilot.de/people/bob-peterson",
+            "date_of_birth": "1961-01-01",
+            "long_description": "<p>Bob Peterson wurde im Januar 1961 in Wooster, ..."
+        }
+    }
+    ],
+    "total_entries": 11
+}
+
+```

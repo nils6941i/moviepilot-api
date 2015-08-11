@@ -1,0 +1,65 @@
+# What do you get? #
+
+Data for a certain movie.
+
+# URL to call #
+
+call the permalink of a movie via GET and append ".json".
+
+## alternative identifiers ##
+
+You can retrieve moviedata via a alternative identifier.
+An alternative identifier is created by service-name (omdb, imdb etc.) and the external-identifier.
+
+Diese setzen sich aus einem servicename(omdb, imdb, etc.) und einem external-identifier zusammen.
+
+```
+/movies/"service-name"-id-"external-identifier".json
+```
+
+
+## parameters for GET ##
+
+|**parameter**|**description**|**optional**|
+|:------------|:--------------|:-----------|
+|''api\_key'' |ApiKey         |needed      |
+
+
+# examples #
+
+## request ##
+
+```
+/movies/oben.json
+```
+
+```
+/movies/omdb-id-19347.json
+```
+
+## request via curl ##
+
+```
+curl http://www.moviepilot.de/movies/oben.json?api_key=APIKEY
+```
+
+## response ##
+
+```
+{
+    "display_title": "Oben",
+    "premiere_date": "2009-09-17",
+    "cinema_start_date": "2009-09-17",
+    "short_description": "Der ehemalige Ballon-Verkäufer Carl Fredricksen ist ...",
+    "dvd_start_date": null,
+    "on_tv": false,
+    "long_description": "&lt;p&gt;&lt;em&gt;Oben&lt;/em&gt; ist die insgesamt zehnte computeranimierte Produktion .... ",
+    "restful_url": "http://www.moviepilot.de/movies/oben",
+    "countries_list": "US",
+    "runtime": 96,
+    "genres_list": "Komödie,Computeranimation",
+    "production_year": "2009",
+    "average_community_rating": 76.8248,
+    "average_critics_rating": 83.5714
+}
+```
